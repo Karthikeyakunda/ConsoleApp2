@@ -6,8 +6,9 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("hello");
-            Console.WriteLine("world");
+            int a = 10;
+            int b = 20;
+            Console.WriteLine($"Addition of two numbers:{a} + {b} = {a+b}");   
         }
     }
 }
