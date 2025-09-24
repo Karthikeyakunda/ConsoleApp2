@@ -6,10 +6,17 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            int a = 10;
-            int b = 20;
-            Console.WriteLine($"Addition of two numbers:{a} + {b} = {a+b}"); 
-            Console.WriteLine($"Multiplication of two numbers:{a} x {b} = {a*b}");
+            int[] arr = new int[5];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.Write("enter elements: ");
+                arr[i] = int.Parse(Console.ReadLine());
+            }
+            foreach(int i in arr)
+            {
+                Console.WriteLine(i);
+            }
+
         }
     }
 }
